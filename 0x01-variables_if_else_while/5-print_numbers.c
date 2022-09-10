@@ -1,4 +1,5 @@
 #include <stdio.h>
+
 /**
  * main - Prints the numbers since 0 to 9
  *
@@ -11,6 +12,6 @@ int main(void)
 	{
 		printf("%i", i);
 	}
-	putchar('\n');
+	printf("\n");
 	return (0);
 }
