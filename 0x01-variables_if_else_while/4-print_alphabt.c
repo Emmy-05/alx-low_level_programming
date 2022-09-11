@@ -5,19 +5,16 @@
  *
  * Return: 0
  */
-
 int main(void)
 {
-	char C;
+	char c = 'a';
 
-	for (C = 'a'; C <= 'z'; C++)
+	while (c <= 'z')
 	{
-		if (C != 'e' && C != 'q')
-		{
+		if (c != 'q' && c != 'e')
 			putchar(c);
-		}
+		c++;
 	}
-
 	putchar('\n');
 
 	return (0);
