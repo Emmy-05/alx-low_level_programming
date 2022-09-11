@@ -1,17 +1,21 @@
 #include <stdio.h>
 
 /**
- * main - Prints the numbers since 0 to 9
+ * main - Print if number is positive, zero or negative
  *
+ * Description: using the main function
+ * this program prints " Programming is positive, zero or negative"
  * Return: 0
  */
+
 int main(void)
 {
-	int i;
-	for (i = '0'; i <= '9'; i++)
+	int n;
+
+	for (n = '0'; n <= '9'; n++)
 	{
-		printf("%i", i);
+	putchar(n);
 	}
-	printf("\n");
+	putchar('\n');
 	return (0);
 }
