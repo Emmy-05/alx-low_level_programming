@@ -8,16 +8,16 @@
 
 int main(void)
 {
-	char ch, e, q;
+	char c, e, q;
 
 	e = 'e';
 	q = 'q';
 
-	for (ch = 'a'; ch <= 'z'; ch++)
+	for (c = 'a'; c <= 'z'; c++)
 	{
-		if (ch != 'e' && ch != 'q')
+		if (c != 'e' && c != 'q')
 		{
-			putchar(ch);
+			putchar(c);
 		}
 	}
 	putchar('\n');
