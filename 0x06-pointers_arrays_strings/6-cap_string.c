@@ -3,6 +3,7 @@
 /**
  * cap_string - capitalizes all words in a string
  * @s: string to capitalize
+ *
  * Return: address of s
  */
 char *cap_string(char *s)
@@ -14,7 +15,7 @@ char *cap_string(char *s)
 	{
 		if (*(s + i) >= 'a' && *(s + i) <= 'z')
 		{
-			f (i == 0)
+			if (i == 0)
 				*(s + i) -= 'a' - 'A';
 			else
 			{
