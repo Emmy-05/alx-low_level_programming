@@ -1,25 +1,21 @@
 #include "main.h"
 
 /**
- * main - Entry point
- *
- * Return: Always 0 (Success)
+ * print_number - Prints an integer.
+ * @n: The integer to be printed.
  */
-int main(void)
+void print_number(int n)
 {
-	int d = 48;
+	unsigned int num = n;
 
-	while (d < 58)
+	if (n < 0)
 	{
-		putchar(d);
-		if (d != 57)
-		{
-			putchar(',');
-			putchar(' ');
-		}
-		d++;
+		_putchar('-');
+		num = -num;
 	}
-	putchar('\n');
 
-	return (0);
+	if ((num / 10) > 0)
+		print_number(num / 10);
+
+	_putchar((num % 10) + '0');
 }
