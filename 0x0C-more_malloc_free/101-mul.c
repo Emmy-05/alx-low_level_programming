@@ -1,4 +1,7 @@
-#include "main.h"
+#include "main.hi"
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
 
 /**
  * _isNum - check if is a number
